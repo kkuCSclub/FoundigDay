@@ -118,6 +118,11 @@ textarea {
   border-radius: 4px;
   background-color: rgba(186, 221, 188, 0.5);
 }
+
+::placeholder{
+  color: rgb(92, 56, 1);
+  font-size: 1.2rem;
+}
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
