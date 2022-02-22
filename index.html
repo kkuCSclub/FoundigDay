@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Founding Day KKU</title>
+  </head>
+  <body dir="rtl">
+    <h1>للدخول في السحب</h1>
+    <div class="step step-1">
+      <h2><span>١)</span>اختر لغة تناسبك وحل الكود</h2>
+      <div class="languages">
+        <a href="https://ideone.com/y8XJMf" target="_blank"
+          ><div class="language c"></div
+        ></a>
+        <a href="https://ideone.com/h92xot" target="_blank"
+          ><div class="language java"></div
+        ></a>
+        <a href="https://ideone.com/Zaks1A" target="_blank"
+          ><div class="language python"></div
+        ></a>
+        <!-- <div class="language javascript"></div> -->
+      </div>
+    </div>
+    <div class="step step-2">
+      <h2><span>٢)</span> ارسل الحل</h2>
+      <div class="form-cntainer">
+        <form action="https://api.sheetmonkey.io/form/eFRhg1RAAWkVEJZFx9pz85" method="post">
+          <div class="input-name">
+            <label for="name">الأسم:</label>
+            <input type="text" id="name" name="Name" required />
+          </div>
+
+          <div class="input-name">
+            <label for="account"> تويتر @:</label>
+            <input type="text" id="account" name="Account" required />
+          </div>
+
+          <div class="input-language">
+            <label for="language">اللغة:</label>
+            <select dir="ltr" id="language" name="Language">
+              <option value="c">C++</option>
+              <option value="java">Java</option>
+              <option value="python">Python</option>
+              <!-- <option value="javascript">JavaScript</option> -->
+            </select>
+          </div>
+
+          <div class="input-solution">
+            <label for="solution">الحل:</label>
+            <textarea
+              id="solution"
+              name="Solution"
+              placeholder=" انسخ الكود"
+              style="height: 200px"
+            ></textarea required>
+          </div>
+
+          <input type="submit" value="ارسل" />
+        </form>
+      </div>
+    </div>
+    <div class="step step-3">
+      <h2><span>٣)</span> شارك الOutput في هاشتاق #</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(111, 213, 116, 0.8),
+      rgba(153, 90, 39, 0.8)
+    ),
+    url("images/background.JPG");
+  background-size: cover;
+  height: auto;
+  font-family: "Tajawal", sans-serif;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 2rem auto;
+  color: rgb(107, 77, 31);
+}
+
+h2 {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+.step {
+  margin: 1rem;
+}
+.languages {
+  text-align: center;
+}
+.language {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 5px solid rgba(231, 228, 225, 0.3);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.c {
+  background-image: url(images/c++.PNG);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(111, 213, 116, 0.5),
+      rgba(153, 90, 39, 0.6)
+    ),
+    url("images/c++.PNG");
+}
+.java {
+  background-image: url(images/java.PNG);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(111, 213, 116, 0.3),
+      rgba(153, 90, 39, 0.3)
+    ),
+    url("images/java.PNG");
+}
+.python {
+  background-image: url(images/python.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(111, 213, 116, 0.3),
+      rgba(153, 90, 39, 0.3)
+    ),
+    url("images/python.jpg");
+}
+.javascript {
+  background-image: url(images/javascript.PNG);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(111, 213, 116, 0.3),
+      rgba(153, 90, 39, 0.3)
+    ),
+    url("images/javascript.PNG");
+}
+form {
+  margin: 2rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 0.5rem;
+}
+input[type="text"],
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(186, 221, 188, 0.5);
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+}
+#name,
+#account {
+  width: 70%;
+}
+.input-name {
+  display: inline-block;
+  /* width: 50%; */
+}
+.input-language {
+  display: inline-block;
+  /* width: 50%; */
+}
+.input-solution {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+}
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 8px 5px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 8rem;
+  margin: 0rem auto;
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  font-family: inherit;
+}
+@media screen and (max-width: 1000px) {
+  form {
+    margin: 2rem;
+
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 0.5rem;
+  }
+
+  .input-solution {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  input[type="submit"] {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+  }
+}
